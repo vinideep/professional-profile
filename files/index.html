@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druken Monk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainFrame">
+        <div class="field">
+        <div id="heading">
+            <h1>Drunken Monk</h1>
+            <h2>Juice Shop</h2>
+        </div>
+        <div id="listContainer">
+            <h2>Juice List</h2>
+            <div id="products">
+                <table id="mytable">
+                    <tr>
+                        <th>Products</th>
+                        <th>Price</th>
+                        <th>No's</th>
+                        <th>Stock</th>
+                        <th>add</th>
+                    </tr>
+                    <tr id="r1">
+                        <td id="pr1" class="pr1">Apple</td>
+                        <td id="p1"><input type="text" value="50" class="inPrice" id="v1"></td>
+                        <td class="countNo" id = c1>0</td>
+                        <td class="stock" id="stock1">0</td>
+                        <td><button onclick="item[1].noItems('btn1','c1','n1','t1','v1','stock1')" id="btn1">+</button></td>
+                    </tr>
+                    <tr id="r2">
+                        <td id="pr1" class="pr1">Pomegranate</td>
+                        <td id="p2"><input type="text" value="60" class="inPrice" id="v2"></td>
+                        <td class="countNo" id = c2>0</td>
+                        <td class="stock" id="stock2">0</td>
+                        <td><button onclick="item[2].noItems('btn2','c2','n2','t2','v2','stock2')" id="btn2">+</button></td>
+                    </tr>
+                    <tr id="r3">
+                        <td id="pr1" class="pr1">Grapes</td>
+                        <td id="p3"><input type="text" value="40" class="inPrice" id="v3"></td>
+                        <td class="countNo" id = c3>0</td>
+                        <td class="stock" id="stock3">0</td>
+                        <td><button onclick="item[3].noItems('btn3','c3','n3','t3','v3','stock3')" id="btn3">+</button></td>
+                    </tr>
+                    <tr id="r4">
+                        <td id="pr1" class="pr1">Mosambi</td>
+                        <td id="p4"><input type="text" value="30" class="inPrice" id="v4"></td>
+                        <td class="countNo" id = c4>0</td>
+                        <td class="stock" id="stock4">0</td>
+                        <td><button onclick="item[4].noItems('btn4','c4','n4','t4','v4','stock4')" id="btn4">+</button></td>
+                    </tr>
+                    <tr id="r5">
+                        <td id="pr1" class="pr1">Orange</td>
+                        <td id="p5"><input type="text" value="35" class="inPrice" id="v5"></td>
+                        <td class="countNo" id = c5>0</td>
+                        <td class="stock" id="stock5">0</td>
+                        <td><button onclick="item[5].noItems('btn5','c5','n5','t5','v5','stock5')" id="btn5">+</button></td>
+                    </tr>             
+                </table>
+            </div> 
+            <div id="confirmBtn">
+                <button class="btnStyle">confirm</button>
+            </div>
+            <div id="cancelBtn">
+                <button class="btnStyle">cancel</button>
+            </div>
+            
+
+            <div id="addBtn">
+                <h2>Add new juice</h2>
+                <label for="juice">Fruit</label>
+                <input type="text" value="" placeholder="eg: Mango" name="juice" id="addJuice">
+                <label for="no of fruit">No of fruit</label>
+                <input type="number" value="0" placeholder="eg: 10" name="no of fruit" id="addNo_fruit"><br>
+                <label for="cost">Cost</label>
+                <input type="number" value="" placeholder="eg: 25" name="cost" id="addCost">
+                <label for="price">Price</label>
+                <input type="number" placeholder="eg: 50" name="price" id="addPrice"><br>
+                <button class="btnStyle" onclick="adding('addJuice','addPrice','mytable','billCounter','CostTable','addCost','addNo_fruit')">Add</button>
+            </div>
+        </div>
+        </div>
+        
+    <div id="bill">
+        <h1>Drunken Monk</h1>
+        <h3>Juice Shop</h3>
+        <h2>Bill Amount</h2>
+        <div id="billCounter">
+            
+            <p id="j1">Apple<span class="fruitCount" id="n1">0</span> <span class="fruitTotal" id="t1">0</span></p>
+            <p id="j2">Pomegranate <span class="fruitCount" id="n2">0</span> <span class="fruitTotal" id="t2">0</span></p>
+            <p id="j3">Grapes <span class="fruitCount" id="n3">0</span> <span class="fruitTotal" id="t3">0</span></p>
+            <p id="j4">Mosambi <span class="fruitCount" id="n4">0</span> <span class="fruitTotal" id="t4">0</span></p>
+            <p id="j5">Orange <span class="fruitCount" id="n5">0</span> <span class="fruitTotal" id="t5">0</span></p>
+            
+        </div>
+        
+        <div id="tot1">
+            <h2><span id="total">0</span></h2>
+        </div>
+        <div id="print"><button id="printBtn" onclick="print()">Print</button></div>
+    </div>
+        <div id="todaySales">
+            <h2>Today Sales</h2>
+            <span id="tdaySales">0</span>
+        </div>
+    
+    <div>
+
+    </div>
+    <table id="CostTable">
+        <tr>
+            <th>Remove</th>
+            <th>Fruits</th>
+            <th>Cost</th>
+            <th>No's</th>
+            <th>total</th>
+        </tr>
+        <tr id="row1">
+            <td id="rem1"><button onclick="deleteRow(this,this,'j1')">-</button></td>
+            <td id="name1">Apple</td>
+            <td id="co1"><input type="text" value="0" class="inPrice" id="cost1"></td>
+            <td class="pnum"><input type="text" value="0" class="inPrice" id="no1"></td>
+            <td id="ctotal1" class="ctotal">0</td>
+        </tr>
+        <tr id="row2">
+            <td id="rem2"><button onclick="deleteRow(this,this,'j2')">-</button></td>
+            <td id="name2">Pomegranate</td>
+            <td id="co2"><input type="text" value="0" class="inPrice" id="cost2"></td>
+            <td class="pnum"><input type="text" value="0" class="inPrice" id="no2"></td>
+            <td id="ctotal2" class="ctotal">0</td>
+        </tr>
+        <tr id="row3">
+            <td id="rem3"><button onclick="deleteRow(this,this,'j3')">-</button></td>
+            <td id="name3">Grapes</td>
+            <td id="co3"><input type="text" value="0" class="inPrice" id="cost3"></td>
+            <td class="pnum"><input type="text" value="0" class="inPrice" id="no3"></td>
+            <td id="ctotal3" class="ctotal">0</td>
+        </tr>
+        <tr id="row4">
+            <td id="rem4"><button onclick="deleteRow(this,this,'j4')">-</button></td>
+            <td id="name4">Mosambi</td>
+            <td id="co4"><input type="text" value="0" class="inPrice" id="cost4"></td>
+            <td class="pnum"><input type="text" value="0" class="inPrice" id="no4"></td>
+            <td id="ctotal4" class="ctotal">0</td>
+        </tr>
+        <tr id="row5">
+            <td id="rem5"><button onclick="deleteRow(this,this,'j5')">-</button></td>
+            <td id="name5">Orange</td>
+            <td id="co5"><input type="text" value="0" class="inPrice" id="cost5"></td>
+            <td class="pnum"><input type="text" value="0" class="inPrice" id="no5"></td>
+            <td id="ctotal5" class="ctotal">0</td>
+        </tr>         
+    </table>
+    <div>
+        <button id="submitBtn">Submit</button>
+    </div>
+    <div id="profitloss">
+        <h1>Profit & Loss </h1>
+        <h4>Today Purchase <span id="tp">0</span></h4>
+        <h4>Today Sales <span id="ts">0</span></h4>
+        <h2 id="loss">Profit</h2> <span id="profit">0</span>
+        
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+}
+.fullContainer{
+    background: black;
+}
+#mainFrame{
+    background-color: #c1c8e4;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+
+}
+.field{
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+
+}
+.field #heading h1,h2{
+    text-align: center;
+}
+#heading {
+    text-align: left;
+    font-family: monospace;
+    color: rgb(121, 48, 6);
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+#listContainer{
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+#listContainer h2{
+    /* text-align: center; */
+    font-size: 2em;
+    font-family: monospace;
+    color: midnightblue;
+}
+
+#products{
+    padding: 20px;
+}
+table{
+    /* border: 2px solid black; */
+}
+td, tr,th{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    /* color: white; */
+    background-color: #5a89ea;
+
+}
+.inPrice{
+    width: 40px;
+    border-radius: 20px;
+    text-align: center;
+    /* background:gold; */
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9,#btn10{
+    cursor: pointer;
+    width: 50px;
+}
+#bill h1 ,h3{
+    text-align: center;
+    font-family: monospace;
+    color: rgb(121, 48, 6);
+    font-weight: 700;
+    font-size: 30px;
+}
+#bill {
+    background-color: #84ceeb;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 90vh;
+    top: 10px;
+    right: 600px;
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#todaySales{
+    background-color: #5680e9;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 50vh;
+    padding: 50px;
+    top: 10px;
+    right: 30px;
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#billCounter{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#tot1{
+    position: absolute;
+    top: 60vh;
+    right: 0px;
+}
+#billCounter h3,#billCounter p{
+    margin: 20px;
+    font-size: large;
+    font-weight: 700;
+}
+#billCounter .fruitCount{
+    position: absolute;
+    right: 200px;
+}
+#billCounter .fruitTotal{
+    position: absolute;
+    right: 110px;
+}
+#total{
+    position: absolute;
+    right: 80px;
+    border-bottom: 4px double;
+    border-top: 1px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#billCounter h2{
+    margin: 20px;
+    text-align: center;
+}
+.btnStyle{
+    font-size: 16px;
+    background-color: #ec1839;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    border-radius: 50px;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 33%;
+    margin-top: 20px;
+}
+#printBtn{
+    font-size: 16px;
+    background-color: #ec1839;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    border-radius: 50px;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+}
+#submitBtn{
+    font-size: 16px;
+    background-color: #ec1839;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    border-radius: 50px;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+#addBtn{
+    margin: 10px;
+    margin-top: 100px;
+}
+#addBtn h2{
+    text-align: center;
+}
+#addNo_fruit{
+    text-align: right;
+}
+#addPrice{
+    text-align: right;
+    margin-left: 34px;
+    margin-top: 20px;
+}
+#addJuice,#addPrice,#addNo_fruit,#addCost{
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#tdaySales{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#profitloss{
+    background-color: #5680e9;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 50vh;
+    padding: 50px;
+    top: 100%;
+    right: 500px;
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#tp, #ts, #profit{
+    text-align: right;
+    font-weight: 800;
+    font-size: 30px;
+    position: absolute;
+    right: 110px;
+    
+    }
+#profitloss h4,h2{
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+#profit{
+    position: absolute;
+    right: 80px;
+    border-bottom: 4px double;
+    border-top: 1px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 270px;
+}
+#CostTable{
+    margin: 20px;
+}
+#CostTable td,th{
+    border: 2px solid black;
+}
