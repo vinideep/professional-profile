@@ -11,7 +11,7 @@
         <div class="field">
         <div id="heading">
             <h1>Drunken Monk</h1>
-            <h2>Juice Shop</h2>
+            <h1>Juice Shop</h1>
         </div>
         <div id="listContainer">
             <h2>Juice List</h2>
@@ -79,7 +79,7 @@
                 <input type="number" value="" placeholder="eg: 25" name="cost" id="addCost">
                 <label for="price">Price</label>
                 <input type="number" placeholder="eg: 50" name="price" id="addPrice"><br>
-                <button class="btnStyle" onclick="adding('addJuice','addPrice','mytable','billCounter','CostTable','addCost','addNo_fruit')">Add</button>
+                <button class="add" onclick="adding('addJuice','addPrice','mytable','billCounter','CostTable','addCost','addNo_fruit')">Add</button>
             </div>
         </div>
         </div>
@@ -89,7 +89,6 @@
         <h3>Juice Shop</h3>
         <h2>Bill Amount</h2>
         <div id="billCounter">
-            
             <p id="j1">Apple<span class="fruitCount" id="n1">0</span> <span class="fruitTotal" id="t1">0</span></p>
             <p id="j2">Pomegranate <span class="fruitCount" id="n2">0</span> <span class="fruitTotal" id="t2">0</span></p>
             <p id="j3">Grapes <span class="fruitCount" id="n3">0</span> <span class="fruitTotal" id="t3">0</span></p>
@@ -102,15 +101,26 @@
             <h2><span id="total">0</span></h2>
         </div>
         <div id="print"><button id="printBtn" onclick="print()">Print</button></div>
+        <div>
+            <p id="time">0</p>
+        </div>
     </div>
         <div id="todaySales">
             <h2>Today Sales</h2>
             <span id="tdaySales">0</span>
         </div>
+        <div id="profitloss">
+            <h1>Profit & Loss </h1>
+            <h4>Today Sales <span id="ts">0</span></h4>
+            <h4>Today Purchase <span id="tp">0</span></h4>
+            <h2 id="loss">Profit</h2> <span id="profit">0</span>
+            
+        </div>
     
     <div>
 
     </div>
+    <div id="costcontainer">
     <table id="CostTable">
         <tr>
             <th>Remove</th>
@@ -158,13 +168,8 @@
     <div>
         <button id="submitBtn">Submit</button>
     </div>
-    <div id="profitloss">
-        <h1>Profit & Loss </h1>
-        <h4>Today Purchase <span id="tp">0</span></h4>
-        <h4>Today Sales <span id="ts">0</span></h4>
-        <h2 id="loss">Profit</h2> <span id="profit">0</span>
-        
     </div>
+    
     </div>
     <script src="index.js"></script>
 </body>

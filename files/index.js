@@ -69,9 +69,8 @@ for (let i = 0; i<hel.length;i++){
 }
 temp+=tamp;
 total.innerHTML = tamp;
-var billCount = document.getElementsByClassName("countNo");
-for (let i = 0;i<=billCount.length; i++){
-    bal[i] = bal[i] - parseInt(billCount[i].innerText);
+for (let i = 0;i<countno.length; i++){
+    bal[i] = bal[i] - parseInt(countno[i].innerText);
 }
 });
 // clearing function
@@ -182,6 +181,9 @@ for (let i = 0; i<hel.length;i++){
     if(parseInt(document.getElementById("profit").innerText)<0){
         document.getElementById("loss").innerHTML = "Loss";
     }
+    if(parseInt(document.getElementById("profit").innerText)>0){
+        document.getElementById("loss").innerHTML = "Profit";
+    }
 }
 
 
@@ -208,3 +210,26 @@ submitBtn.addEventListener("click",()=>{
     document.getElementById("tp").innerHTML = tp;
     
 });
+
+function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+  
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    // add a zero in front of numbers<10
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function() {
+      startTime()
+    }, 500);
+  }
+  startTime();
+
