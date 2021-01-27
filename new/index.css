@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    background: #F0F1F5;
+}
+.mainContainer{
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    /* border: 2px solid; */
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #D8D9DB;
+}
+.inputContainer label{
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+.inputContainer input{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.inputContainer input:hover{
+    width: 250px;
+    padding: 10px;
+    border-color: #00CE23;
+}
+hr{
+    width: 350px;
+}
+h1{
+    margin-top: 0px;
+    text-align: center;
+    color: #551BF7;
+    font-size: 30px;
+}
+.inputContainer{
+    text-align: center;
+}
+.submitButton{
+    text-align: center;
+    padding-top: 20px;
+    border: none; 
+    text-decoration: none;
+}
+#submitButton{
+    background: #551BF7;
+    padding: 10px;
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.findContainer{
+    text-align: center;
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #D8D9DB;
+}
+.findInput{
+    padding-bottom: 20px;
+}
+.infoTable{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+#informationTable{
+    margin-left: 40px;
+    text-align: center;
+    border: 2px solid;
+}
+
+#informationTable th{
+    border: 2px solid;
+}
+#informationTable td{
+    border: 2px solid;
+    text-align: center;
+}
+.findButton{
+    padding-top: 20px;
+}
+.findContainer input{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+#findButton{
+    background: #00CE23;
+    padding: 10px;
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.studentdetail{
+    margin-left: 40px;
+}
+@media only screen and (max-width:450px){
+    .mainContainer{
+        margin-top: 100px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        /* border: 2px solid; */
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #D8D9DB;
+    }
+    hr{
+        width: 250px;
+    }
+    #submitButton{
+        background: #551BF7;
+        padding: 10px;
+        width: 250px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 900;
+        border-radius: 10px;
+    }
+    .findContainer{
+        text-align: center;
+        margin-top: 100px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #D8D9DB;
+    }
+    #informationTable{
+        margin-left: 0;
+        text-align: center;
+        border: 2px solid;
+    }
+    #findButton{
+        background: #00CE23;
+        padding: 10px;
+        width: 250px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 900;
+        border-radius: 10px;
+    }
+}

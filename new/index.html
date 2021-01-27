@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color changing</title>
+    <link rel="stylesheet" href="./index.css">
     
 </head>
 <body>
-    <script src="index.js"></script>
+    <div class="mainContainer">
+    <h1>Students Data</h1>
+    <div class="inputContainer" id="studentInfo">
+        <label for="studentName">Student Name</label>
+        <input type="text" name="studentName" id="studentName">
+        <label for="studentAge">Student Age</label>
+        <input type="text" name="studentAge" id="studentAge">
+        <label for="studentSslcMark">SSLC mark</label>
+        <input type="number" name="studentSslcMark" id="studentSslcMark">
+        <label for="studentHscMark">HSC mark</label>
+        <input type="number" name="studentHscMark" id="studentHscMark">
+    </div>
+    <div class="submitButton">
+        <hr>
+        <button id="submitButton">Submit</button>
+    </div>
+    </div>
+    <div class="findContainer">
+        <div class="findInput">
+        <h1>Find Student</h1>
+        <input type="text" name="findStudentDetail" id="studentDetail">
+        </div>
+        <div class="infoTable">
+        <table id="informationTable">
+            <tr>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>SSLC mark</th>
+                <th>HSC mark</th>
+            </tr>
+        </table>
+        <div class="findButton">
+        <button id="findButton">Find</button>
+        </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
 </body>
 </html>

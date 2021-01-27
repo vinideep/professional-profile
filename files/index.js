@@ -133,7 +133,7 @@ function adding(fruit,newprice,table,billarea,costTable,costValue,fruitNos){
         
         var sample = mytable.insertRow(-1);
         sample.setAttribute("id",`r${buttoncount}`);
-        var cell0 = sample.insertCell(0)
+        var cell0 = sample.insertCell(0);
         var cell1 = sample.insertCell(1);
         var cell2 = sample.insertCell(2);
         var cell3 = sample.insertCell(3);

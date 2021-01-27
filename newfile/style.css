@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+.name{
+    padding: 10px 5px;
+    border: 2px solid black;
+    margin: 20px;
+    display: inline-block;
+
+}
+.intern{
+    color: red;
+}
+.submitBtn{
+    width: 50%;
+}
+.Btn{
+    display: flex;
+}
+@media only screen and (max-width: 768px)and (min-width: 600px){
+    .Btn{
+        display: block;
+    }
+}
+/* @media only screen and (min-width: 600px){
+    .Btn{
+        background: red;
+    }
+} */
